@@ -4,11 +4,23 @@ import sk.itsovy.petrova.exceptions.StackOverFlowException;
 
 public class Main {
     public static void main(String[] args) throws StackOverFlowException {
-        Stack<Integer>stack1=new Stack<>(3);
-        stack1.push(17);
-        stack1.push(17);
-        stack1.push(17);
-        stack1.push(17);
+    /*    Stack<Integer>stack=new Stack<>(3);
+        stack.push(17);
+        stack.push(17);
+        stack.push(17);
+        
+        stack.pop();
+        stack.printStack();
+*/
+        Queue<Integer> q1=new Queue<>(5);
+
+                q1.enqueue(1);
+                q1.enqueue(2);
+                q1.enqueue(3);
+                q1.enqueue(4);
+
+                q1.printQueue();
+
 
     }
 }
